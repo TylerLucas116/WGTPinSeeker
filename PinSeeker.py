@@ -25,53 +25,11 @@ def hit_driver(mouse):
     time.sleep(1)
     mouse.press(Button.left)
     time.sleep(0.25)
-    mouse.move(0, (-403 - (100 - argv[2] * 3.7)))
+    mouse.move(0, (-403 + ((100 - int(sys.argv[2])) * 3.8)))
     time.sleep(0.25)
     mouse.release(Button.left)
     time.sleep(2.18)
-    mouse.click(Button.left, 2)
-
-    #elif sys.argv[2] == "90":
-        mouse.click(Button.left)
-        time.sleep(1)
-        mouse.press(Button.left)
-        time.sleep(0.25)
-        mouse.move(0, -363)
-        #time.sleep(0.25)
-        #mouse.release(Button.left)
-        #time.sleep(2.18)
-        #mouse.click(Button.left, 2)
-    #elif sys.argv[2] == "85":
-        mouse.click(Button.left)
-        time.sleep(1)
-        mouse.press(Button.left)
-        time.sleep(0.25)
-        mouse.move(0, -341)
-        #time.sleep(0.25)
-        #mouse.release(Button.left)
-        #time.sleep(2.18)
-        #mouse.click(Button.left, 2)
-    #elif sys.argv[2] == "80":
-        mouse.click(Button.left)
-        time.sleep(1)
-        mouse.press(Button.left)
-        time.sleep(0.25)
-        mouse.move(0, -327)
-        #time.sleep(0.25)
-        #mouse.release(Button.left)
-        #time.sleep(2.18)
-        #mouse.click(Button.left, 2)
-    #elif sys.argv[2] == "70":
-        mouse.click(Button.left)
-        time.sleep(1)
-        mouse.press(Button.left)
-        time.sleep(0.25)
-        mouse.move(0, -291)
-        #time.sleep(0.25)
-        #mouse.release(Button.left)
-        #time.sleep(2.18)
-        #mouse.click(Button.left, 2)
-    
+    mouse.click(Button.left, 2)   
 
 def hit_iron(mouse):
     mouse.position = (975, 500)
@@ -85,5 +43,4 @@ def hit_iron(mouse):
     time.sleep(1.98)
     mouse.click(Button.left, 2)
 
-run()
-    
+run()    
