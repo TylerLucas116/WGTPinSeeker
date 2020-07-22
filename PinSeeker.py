@@ -37,10 +37,11 @@ def hit_iron(mouse):
     time.sleep(1)
     mouse.press(Button.left)
     time.sleep(0.25)
-    mouse.move(0, -425)
+    mouse.move(0, (-403 + ((100 - int(sys.argv[2])) * 3.8)))
     time.sleep(0.25)
     mouse.release(Button.left)
-    time.sleep(1.98)
+    time.sleep(1.98 - ((100 - int(sys.argv[2])) * .0018))
+    print(1.98 - ((100 - int(sys.argv[2])) * .0018))
     mouse.click(Button.left, 2)
 
 run()    
