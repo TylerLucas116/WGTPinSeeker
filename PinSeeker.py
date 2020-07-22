@@ -22,7 +22,7 @@ def hit_driver(mouse):
     mouse.move(0, -425)
     time.sleep(0.25)
     mouse.release(Button.left)
-    time.sleep(2.18401)
+    time.sleep(2.18)
     mouse.click(Button.left, 2)
 
 
